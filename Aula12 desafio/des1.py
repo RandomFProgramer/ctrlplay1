@@ -1,10 +1,15 @@
-class carro(): 
-    def __init__(self, km, gg):
-        self.km = km
-        self.gg = gg
-    def cpk(self):
-        return "Endereço Completo: "+self.rua+","+self.bairro+"-CEP:"+self.CEP+"feita pela imobiliária "+self.imobiliaria
-casaA = casa(rua = "yesman", bairro = "Goodsprings" , CEP= "128965238")
-casaB = casa(rua = "Prim", bairro = "Casinovile", CEP = "193834657")
-print (casaA.enderecoCompleto())
-print (casaB.enderecoCompleto())
+#Esse foi o desafio para descobrir quanto um carro gastou de gasolina
+class carro ():  # gq = Gasolina queimada e kmr = Km rodados e lpkm = Litros por km
+    def __init__(self, gasolinaGasta, kmRodados, litrosporkm) :
+        self.gasolinaGasta = gasolinaGasta
+        self.kmRodados = kmRodados
+        self.litrosporkm = litrosporkm      
+
+
+gq = float (input("Quantos litros de gasolina foram gastos?"))
+kmr = float (input("Quantos Kilometros foram rodados?"))
+
+lpkm = gq/kmr
+
+carro1 = carro( gasolinaGasta = gq, kmRodados = kmr, litrosporkm = lpkm )
+print(carro1.litrosporkm, "km/l") #assim temos a resposta final
