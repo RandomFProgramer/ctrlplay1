@@ -9,11 +9,11 @@ def recebeTexto():
         palavrasofensivas = ['fdp', 'vtnc', 'filha da puta','vai tomar no cu','Se fode','desgraçado','se mata','chupa','cabeça de pica','imbecil','idiota','mula sem cabeça']
         for p in palavrasofensivas:
                 if p in texto :
-                        print ("primeiro aviso!, se você não gostou da piada vá a outro lugar ou peça por outra.")
-                        return recebeTexto
+                    print ("primeiro aviso!, se você não gostou da piada vá a outro lugar ou peça por outra.")
+                    return recebeTexto
 
 def buscaResposta (nome, texto):
-     with open("BaseDeConhecimento.txt", "a+") as conhecimento: 
+    with open("BaseDeConhecimento.txt", "a+") as conhecimento: 
         conhecimento.seek(0) 
         while True: 
             viu = conhecimento.readline() 
@@ -33,7 +33,7 @@ def buscaResposta (nome, texto):
                         return "Hum..."
                     
 def exibeResposta (resposta, nome): 
-     print(resposta.replace("Chatbot", nome))  
-     if resposta == "fim": 
+    print(resposta.replace("Chatbot", nome))  
+    if resposta == "fim": 
         return "fim" 
-     return "continua"
+    return "continua"
