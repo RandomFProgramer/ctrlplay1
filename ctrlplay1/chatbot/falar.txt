@@ -1,0 +1,10 @@
+Cliente: oi
+Chatbot: oi
+Cliente: Sim
+Chatbot: Vamos lá! qual a diferença entre um gato e um alface? Um deles é um animal e o outro não!!  Gostou?
+
+Cliente: kkkk
+Chatbot: engraçado né? boa
+
+Cliente: tem outra
+Chatbot:  o ceu é água

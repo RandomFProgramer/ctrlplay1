@@ -1,0 +1,23 @@
+p{
+    width: 500px;
+}
+
+.titulox{
+    width: 600px
+}
+
+img{
+    width: 400px;
+    align-self: center;
+}    
+
+body{
+    color:blue;
+    background-color: rgb(236, 133, 6);
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+.header{
+    display: flex ;
+}
