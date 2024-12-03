@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans css-serif;
+    background-color: #2c2c2c; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 20px;
+}
+
+
+header { 
+
+
+
+
+}
+
+
+main, div {
+    background: #3a3a3a; /* Fundo mais claro para se destacar */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff; /* Título em branco */
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555; /* Borda escura */
+    border-radius: 4px;
+    background-color: #4a4a4a; /* Fundo dos inputs */
+    color: #e0e0e0; /* Texto claro nos inputs */
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Margem para centralizar a imagem */
+    border: 2px solid #555; /* Borda escura para a imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+}
