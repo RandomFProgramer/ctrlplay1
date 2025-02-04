@@ -1,0 +1,12 @@
+.CaixaM
+{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ row-gap: 100px;
+ column-gap: 100px;
+}
+
+.item1
+{
+ display: flex
+}
