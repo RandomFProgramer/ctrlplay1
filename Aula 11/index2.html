@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moeda de Rafael</title>
+    <script type="text/javascript">
+        function calcular (){
+            var formulario = document.getElementById("formulario");	
+            
+            const valReal = 1
+            const valDollar = 5.77
+            const valEuro = 6
+            const valRublo = 0.06
+            const valLibra = 7.16
+            
+            var Real        = +formulario.Real.value;
+    		var Dollar 		= +formulario.Dollar.value;
+    		var Euro        = +formulario.Euro.value;
+            var Rublo 		= +formulario.Rublo.value;
+    		var Libra		= +formulario.Libra.value;
+    		
+            if(Real != null && Dollar == 0 && Euro == 0 && Rublo == 0 && Libra == 0)
+            {
+                reais = reais*valReal
+                dollar = reais/Dollar
+                euro = reais/Euro
+                rublo = reais/Rublo
+                libra  = reais/Libra
+
+            }else
+            {
+                alert("Erro!\nPreecha um só")
+            }
+            formulario.Dollar.value = dollar.tofixed(2)
+            formulario.Euro.value = euro.tofixed(2)
+            formulario.Rublo.value = rublo.tofixed(2)
+            formulario.Libra.value = libra.tofixed(2)
+        }
+        function limpar(){
+            formulario.reais.value = null
+            formulario.dollar.value = null
+            formulario.euro.value = null
+            formulario.rublo.value = null
+            formulario.libra.value = null
+        }
+    </script>
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Conversão de Moeda</legend>
+    	
+            <label for="Real">reais:</label>
+            <input name="reais" type="number" />
+        
+            <label for="Dollar">dollar:</label>
+            <input name="dollar" type="number" />
+        
+            <label for="Euro">euro:</label>
+            <input name="euro" type="number" />
+
+            <label for="Rublo">rublo:</label>
+            <input name="rublo" type="number" />
+
+            <label for="Libra">libra:</label>
+            <input name="libra" type="number" />
+                
+            <a href="#" onclick="calcular()">Calcular</a>
+        </fieldset>
+    </form>
+</body>
+</html>
